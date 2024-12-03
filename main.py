@@ -18,7 +18,6 @@ for i, (quote, author) in enumerate(zip(quotes, authors), 1):  # перебир�
 with open('data.json', 'w', encoding='utf-8') as f:  
     json.dump(data, f, ensure_ascii=False, indent=4) 
 print("Данные успешно сохранены в файл data.json.")  # сообщаем, что данные успешно сохранены
-# генерация HTML-кода для отображения данных
 html_content = f'''
 <!DOCTYPE html>
 <html lang="en">
